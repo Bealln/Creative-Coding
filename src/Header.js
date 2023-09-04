@@ -4,8 +4,6 @@ import './Header.css';
 
 
 
-
-
 //To see server http://172.20.10.8:3000/
 
 class Header extends Component {
