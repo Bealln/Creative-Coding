@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import Header from './Header';
 import Card from './Card';
+import Day5 from './art/Day5';
+import Concreto from './art/Concreto';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -13,6 +15,9 @@ root.render(
       <Card />
       <Card />
     </div>
+    <Day5/>
+    <Concreto />
+    
   </React.StrictMode>
 );
 
