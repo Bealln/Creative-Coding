@@ -2,10 +2,6 @@ import React from "react";
 import Sketch from "react-p5";
 
 
-let x = 50;
-let y = 50;
-
-
 const Concreto = (props) => {
   const setup = (p5, canvasParentRef) => {
 	
@@ -42,7 +38,7 @@ const Concreto = (props) => {
     
         // 2. Run a for loop that will execute actions depending on conditional expressions
     for (var i = 0; i < 7; i++){
-        if (i<6 && i%2==0){
+        if (i<6 && i%2===0){
                 // 3. If the index number is even it will create:
                 //- A green rectangle whose x2 point will be a horizontal step to the right than its x1 ("right facing")
                 // - A cream rectangle one vertical steps below and one horizontal step to the right 
@@ -60,7 +56,7 @@ const Concreto = (props) => {
                 
         }
             
-            else if (i<6 && i%2!=0){
+            else if (i<6 && i%2!==0){
                 // 4. If the index number is uneven it will create:
                 //- A green rectangle, utilising the parameter x2odd, which point will be a horizontal step to the left than its x1 ("left facing")
                 // - A cream rectangle one vertical steps below and one horizontal step to the right (x2 instead of x2odd will be used for reference)
