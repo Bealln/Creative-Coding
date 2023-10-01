@@ -1,17 +1,17 @@
 import React from "react";
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, ButtonGroup, Button } from '@chakra-ui/react'
-import Project from "./media/Project1.png"
+import concreto from './media/concreto.png';
 
-const ProjectCard = () => {
+const ProjectConcreto = () => {
     return(
         <Card maxW='100%'>
         <CardBody>
           <Image
-            w='100%'
-            src= {Project}
-            alt='preview'
-            borderRadius='lg'
-          />
+              w='100%'
+              src= {concreto}
+              alt='preview'
+              borderRadius='lg'
+            />
           <Stack mt='6' spacing='3'>
             <Heading size='md'>Turn around</Heading>
             <Text>
@@ -33,6 +33,6 @@ const ProjectCard = () => {
     );
 }
 
-export default ProjectCard;
+export default ProjectConcreto;
 
 
