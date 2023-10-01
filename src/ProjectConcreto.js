@@ -1,6 +1,7 @@
 import React from "react";
 import { Card, CardBody, CardFooter, Image, Stack, Heading, Text, Divider, ButtonGroup, Button } from '@chakra-ui/react'
 import concreto from './media/concreto.png';
+import Concreto from './art/Concreto.js';
 
 const ProjectConcreto = () => {
     return(
