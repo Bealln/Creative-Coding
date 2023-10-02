@@ -10,7 +10,7 @@ import {
   useBreakpointValue,
 } from '@chakra-ui/react'
 import logo from './media/logo.svg';
-import headerimage from './media/header.png';
+import headerImage from './media/night_jungle.png';
 
 const SplitScreen = () => {
   return (
@@ -57,7 +57,7 @@ const SplitScreen = () => {
         <Image
           alt={'Login Image'}
           objectFit={'cover'}
-          src={headerimage}
+          src={headerImage}
         />
       </Flex>
     </Stack>

@@ -5,7 +5,7 @@ import Sketch from "react-p5";
 const Concreto = (props) => {
   const setup = (p5, canvasParentRef) => {
 	
-    p5.createCanvas(800, 500).parent(canvasParentRef);
+    p5.createCanvas(500, 500).parent(canvasParentRef);
     p5.background(234,234,234);
     //Printing the artists name, title of work and date for credit
 	//print('Concreto,Alfredo Volpi, December 1950');

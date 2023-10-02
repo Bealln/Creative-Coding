@@ -8,10 +8,12 @@ const ProjectConcreto = () => {
         <Card maxW='100%'>
         <CardBody>
           <Image
+              h='400px'
               w='100%'
               src= {concreto}
               alt='preview'
               borderRadius='lg'
+              objectFit='cover'
             />
           <Stack mt='6' spacing='3'>
             <Heading size='md'>Turn around</Heading>

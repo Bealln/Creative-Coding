@@ -5,22 +5,24 @@ import './index.css';
 import { ChakraProvider } from '@chakra-ui/react'
 import ProjectCard from './ProjectCard';
 import ProjectDay5 from './ProjectConcreto';
-import { Grid} from '@chakra-ui/react'
-import SplitScreen from './App_header';
+import {Grid, Stack} from '@chakra-ui/react'
+import Hero from './AppHeader';
+import Footer from './AppFooter';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
     <ChakraProvider>
-      <SplitScreen /> 
-      <br />{'  '}
-      <br />{'  '}
-      <br />{'  '}
-      <Grid templateColumns='repeat(3, 1fr)' gap={6} mx={6}>
+      <Stack spacing='20'>
+        <Hero />   
+        <Grid templateColumns='repeat(3, 1fr)' gap={6} mx={6}>
           <ProjectCard w='100%' />
           <ProjectCard w='100%' />
           <ProjectDay5 w='100%' />
-       </Grid>
+        </Grid>
+        <Footer />
+      </Stack>
+      
     </ChakraProvider>
   </React.StrictMode>
 );
