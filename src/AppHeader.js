@@ -12,7 +12,7 @@ import {
 import logo from './media/logo.svg';
 import headerImage from './media/night_jungle.png';
 
-const SplitScreen = () => {
+const Hero = () => {
   return (
     <Stack minH={'100vh'} direction={{ base: 'column', md: 'row' }}>
       <Flex p={8} flex={1} align={'center'} justify={'center'}>
@@ -42,14 +42,19 @@ const SplitScreen = () => {
           <Stack direction={{ base: 'column', md: 'row' }} spacing={4}>
             <Button
               rounded={'full'}
-              bg={'blue.400'}
+              bg={'#8ED3DB'}
               color={'white'}
               _hover={{
-                bg: 'blue.500',
+                bg: '#64C3CE',
               }}>
               View projects
             </Button>
-            <Button rounded={'full'}>Contact</Button>
+            <Button 
+              rounded={'full'} 
+              bg={'#8ED3DB'}
+              color={'white'}
+              _hover={{
+                bg: '#64C3CE',}}>Contact</Button>
           </Stack>
         </Stack>
       </Flex>
@@ -65,4 +70,4 @@ const SplitScreen = () => {
 }
 
 
-export default SplitScreen;
+export default Hero;

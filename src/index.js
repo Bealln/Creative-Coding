@@ -2,12 +2,14 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 // import `ChakraProvider` component
-import { ChakraProvider } from '@chakra-ui/react'
-import ProjectCard from './ProjectCard';
-import ProjectDay5 from './ProjectConcreto';
-import {Grid, Stack} from '@chakra-ui/react'
+import { ChakraProvider } from '@chakra-ui/react';
+import {projects} from "./projects.js";
+import ProjectList from './ProjectList';
+import {Grid,Stack} from '@chakra-ui/react'
 import Hero from './AppHeader';
 import Footer from './AppFooter';
+import ProjectTest from './ProjectTest';
+import ProjectTest2 from './ProjectTest2';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
@@ -15,10 +17,13 @@ root.render(
     <ChakraProvider>
       <Stack spacing='20'>
         <Hero />   
+        {/* Statis projects, working fine */}
+        <ProjectList w='100%' projects={projects}/> 
+        {/* Dynamic projects, can't pass a component as a prop on the Card item */}
         <Grid templateColumns='repeat(3, 1fr)' gap={6} mx={6}>
-          <ProjectCard w='100%' />
-          <ProjectCard w='100%' />
-          <ProjectDay5 w='100%' />
+          <ProjectTest/>
+          <ProjectTest2/>
+          <ProjectTest/>
         </Grid>
         <Footer />
       </Stack>
@@ -31,3 +36,4 @@ root.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 // reportWebVitals();
+
