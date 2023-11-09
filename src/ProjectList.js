@@ -16,7 +16,7 @@ const ProjectList = ({projects}) => {
         name={projects[i].name} 
         description={projects[i].description} 
         thumbnail={projects[i].thumbnail}
-        art = {projects[i].art}
+        Artpiece = {projects[i].Art}
         />
         );
     })
